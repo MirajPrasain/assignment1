@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CS355 - Page 1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button id="darkToggle" aria-label="Toggle dark mode">🌙</button>
+
+    <div class="container">
+      <h1>Welcome to CS355</h1>
+      <p>This is Page 1. Fill out the form below.</p>
+
+      <img src="code.jpg" alt="Random image" />
+
+      <form action="page2.html" method="GET">
+        <label>
+          Name:
+          <input
+            type="text"
+            name="name"
+            required
+            placeholder="Your full name"
+          />
+        </label>
+
+        <label>
+          Email:
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="you@example.com"
+          />
+        </label>
+
+        <label>
+          Favorite Color:
+          <input type="text" name="color" placeholder="e.g. blue" />
+        </label>
+
+        <div class="buttons">
+          <input type="reset" value="Reset" />
+          <input type="submit" value="Continue" />
+        </div>
+        <div class="note">We'll carry these values over to the next page.</div>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

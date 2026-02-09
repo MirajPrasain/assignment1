@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CS355 - Page 2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button id="darkToggle">🌙</button>
+
+    <div class="container">
+      <h1>Submitted Data</h1>
+      <div id="results"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+      const params = new URLSearchParams(location.search);
+      const resultsDiv = document.getElementById("results");
+
+      params.forEach((value, key) => {
+        const row = document.createElement("div");
+        row.className = "row";
+
+        const k = document.createElement("div");
+        k.textContent = key;
+
+        const v = document.createElement("div");
+        v.textContent = value;
+
+        row.appendChild(k);
+        row.appendChild(v);
+        resultsDiv.appendChild(row);
+      });
+    </script>
+  </body>
+</html>
