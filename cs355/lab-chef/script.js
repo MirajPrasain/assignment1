@@ -12,7 +12,7 @@ async function getRecipe () {
   }
 
   if (!ingredientInput) { 
-    alet('Please Enters Ingredient')
+    alert('Please Enters Ingredient')
     return 
   }
 
